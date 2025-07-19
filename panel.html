@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Express Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Express Admin Panel</h1>
+    <div class="section">
+      <h2>Manual Deposit Approval</h2>
+      <input type="text" placeholder="Phone Number" />
+      <input type="number" placeholder="Amount (KES)" />
+      <button>Approve Deposit</button>
+    </div>
+    <div class="section">
+      <h2>Withdrawals</h2>
+      <input type="text" placeholder="Phone Number" />
+      <input type="number" placeholder="Amount (KES)" />
+      <button>Approve Withdrawal</button>
+    </div>
+    <div class="section">
+      <h2>Game Controls</h2>
+      <label>Profit Margin (%):</label>
+      <input type="range" min="0" max="100" value="50" />
+      <label>Obstacle Difficulty:</label>
+      <select>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+      </select>
+    </div>
+    <div class="section">
+      <h2>Player Management</h2>
+      <button>View All Players</button>
+      <button>View Activity Logs</button>
+      <button>Export Reports</button>
+    </div>
+    <div class="section">
+      <h2>Security & Alerts</h2>
+      <button>Trigger Low Profit Alert</button>
+      <button>Show Trend Indicator</button>
+    </div>
+    <div class="section">
+      <h2>Flash Rounds & Leaderboard</h2>
+      <button>Trigger Flash Round</button>
+      <button>Display False Top Player</button>
+    </div>
+    <footer>
+      <p>M-Pesa: 0794550083 | Name: Drive and Cash Ltd</p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
