@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Express Login</title>
+  <style>
+    body { font-family: Arial; display: flex; align-items: center; justify-content: center; height: 100vh; background: #111; color: #fff; }
+    form { display: flex; flex-direction: column; gap: 10px; background: #222; padding: 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <form onsubmit="login(event)">
+    <label>Phone Number:</label>
+    <input type="tel" id="phone" required />
+    <button type="submit">Login</button>
+  </form>
+  <script>
+    function login(e) {
+      e.preventDefault();
+      const phone = document.getElementById('phone').value;
+      localStorage.setItem('playerPhone', phone);
+      window.location.href = 'garage.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Express - Purchase Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>In-Game Purchases</h1>
+  <div class="shop">
+    <div class="item">
+      <h2>Speed Boost</h2>
+      <p>KES 10</p>
+      <button onclick="buyItem('Speed Boost', 10)">Buy</button>
+    </div>
+    <div class="item">
+      <h2>Shield</h2>
+      <p>KES 10</p>
+      <button onclick="buyItem('Shield', 10)">Buy</button>
+    </div>
+    <div class="item">
+      <h2>Real Money Car</h2>
+      <p>KES 30–100</p>
+      <button onclick="buyItem('Real Money Car', 50)">Buy</button>
+    </div>
+    <div class="item">
+      <h2>Nganya Rental</h2>
+      <p>KES 50 for 2 hours</p>
+      <button onclick="buyItem('Nganya Rental', 50)">Buy</button>
+    </div>
+    <div class="item">
+      <h2>Emergency Boost</h2>
+      <p>KES 20</p>
+      <button onclick="buyItem('Emergency Boost', 20)">Buy</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3>Enter Payment Details</h3>
+      <p id="itemName"></p>
+      <input type="text" id="phone" placeholder="Phone Number" /><br />
+      <input type="text" id="mpesa" placeholder="M-Pesa Code" /><br />
+      <button onclick="confirmPurchase()">Confirm</button>
+      <button onclick="closePopup()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="purchase.js"></script>
+</body>
+</html>
